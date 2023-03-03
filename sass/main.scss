@@ -1,0 +1,44 @@
+@import 'colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: grey;
+	position: relative;
+}
+
+nav {
+	text-transform: uppercase;
+
+    .navbar-brand{
+        font-weight: bold;
+    }
+
+	.navbar-brand,
+	.nav-link {
+		color: $color-white;
+    }
+    
+	.navbar-brand:hover,
+	.nav-link:hover {
+		color: $color-aqua;
+	}
+
+	.fa-bars {
+		padding: 10px;
+	}
+
+	.active {
+		color: $color-aqua;
+	}
+
+
+
+}
