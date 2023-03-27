@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SillyBikes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/68cbd3992c.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
 
     <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100">
         <div class="container">
@@ -27,11 +28,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">home</a>
+                    <a class="nav-link active" href="#home">home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
-                    <a class="nav-link" href="#">TEAM</a>
-                    <a class="nav-link" href="#">wyprawy</a>
-                    <a class="nav-link" href="#">To My</a>
+                    <a class="nav-link" href="#portfolio">wyprawy</a>
+                    <a class="nav-link" href="#prices">test: prices</a>
+                    <a class="nav-link" href="#team">TEAM</a>
                     <a class="nav-link" href="#">To My</a>
                     <a class="nav-link" href="#">kontakt</a>
                 </div>
@@ -40,7 +41,7 @@
     </nav>
 
 
-    <header>
+    <header id="home">
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
@@ -100,9 +101,247 @@
 
             </div>
         </section>
+
+        <section class="aboutus-hero py-5">
+            <div class="aboutus-shadow"></div>
+            <div class="container py-5">
+
+                <h2>nasze przygody</h2>
+                <div class="underline"></div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 text-center aboutus-hero-item">
+                        <p class="aboutus-hero-title mb-1">Włochy</p>
+                        <p><i class="fa-solid fa-mountain-sun"></i></p>
+                        <p class="aboutus-hero-text">Pierwszy wyjazd zawsze pozostaje najmocniej w pamięci.</p>
+                    </div>
+
+                    <div class="col-lg-4 text-center aboutus-hero-item">
+                        <p class="aboutus-hero-title mb-1">GreenVelo</p>
+                        <p><i class="fa-solid fa-road"></i></p>
+                        <p class="aboutus-hero-text">Ściana wschodnia, dwu tygodniowa podróż wzdłuż polskiej granicy.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 text-center aboutus-hero-item">
+                        <p class="aboutus-hero-title mb-1">Szwecja</p>
+                        <p><i class="fa-solid fa-tree"></i></p>
+                        <p class="aboutus-hero-text">Piękne widoki i niezapomniane biwaki!</p>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="portfolio" class="portfolio py-5">
+            <h2>wyprawy</h2>
+            <div class="underline"></div>
+            <div class="container pb-4">
+
+                <!-- MOBILE -->
+
+                <div class="card-group d-lg-none">
+                    <div class="card me-sm-3">
+                        <img src="./img/podlasie_big.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Podlasie</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card me-sm-3">
+                        <img src="./img/mountain_big.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Alpy</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/lake-1920.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Szwecja</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESKTOP -->
+
+                <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/podlasie_big.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Podlasie</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/mountain_big.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Alpy</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/lake-1920.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Szwecja</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="prices py-5 bg-light">
+            <h2>wyprawy</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="price-wrap row text-center justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>mobile</h3>
+                            <hr>
+                            <p><span>Rower</span> <i class="fa-solid fa-mountain-sun"></i></p>
+                            <p><span>Długość trasy:</span>+/- 900km</p>
+                            <p><span>Poziom trudności:</span>Momentami walka o przetrwamie</p>
+                            <p><span>Test:</span>test</p>
+                            <p>Przykładowy tekst</p>
+                            <p class="price-tag">999zł</p>
+                            <button class="btn btn-secondary">zamawiam</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>mobile</h3>
+                            <hr>
+                            <p><span>Rower</span> <i class="fa-solid fa-mountain-sun"></i></p>
+                            <p><span>Długość trasy:</span>+/- 900km</p>
+                            <p><span>Poziom trudności:</span>Momentami walka o przetrwamie</p>
+                            <p><span>Przykładowy tekst</span>Przykładowy tekst</p>
+                            <p>Przykładowy tekst</p>
+                            <p class="price-tag">999zł</p>
+                            <button class="btn btn-primary">zamawiam</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>mobile</h3>
+                            <hr>
+                            <p><span>Rower</span> <i class="fa-solid fa-mountain-sun"></i></p>
+                            <p><span>Długość trasy:</span>+/- 900km</p>
+                            <p><span>Poziom trudności:</span>Momentami walka o przetrwamie</p>
+                            <p><span>Przykładowy tekst</span>Przykładowy tekst</p>
+                            <p>Przykładowy tekst</p>
+                            <p class="price-tag">999zł</p>
+                            <button class="btn btn-secondary">zamawiam</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <p class="price-info">Tutaj możesz <a href="#contact">skontaktować się</a> z nami.</p>
+                    <p class="text-muted">Pakiet <strong>FULL</strong> zawiera wszystko.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team py-5">
+            <h2>team</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="card-group team-carousel">
+                    <div class="card mx-3">
+                        <img src="/img/dream-team/arczi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Arczi</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around ">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="/img/dream-team/szymonek.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Szymonek</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="/img/dream-team/marczi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marczi</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="/img/dream-team/jacer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jacer</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-shadow"></div>
+        </section>
+
     </main>
 
-
+    <div style="height: 200vh;"></div>
 
 
 
@@ -112,6 +351,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slickSettings"></script>
     <script src="./js/main.js"></script>
 </body>
 
